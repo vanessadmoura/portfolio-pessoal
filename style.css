@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilo geral do corpo */
+body {
+    padding-top: 80px;
+    background-color: #d0afdd;
+}
+
+/* Estilo do fundo */
+.background {
+    background-color: #d0afdd;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Estilo do cabeçalho fixo */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #9623c4;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo do logo */
+.logo-container {
+    position: absolute;
+    left: 30px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Links do cabeçalho */
+.cabeçalho-link {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabeçalho-link a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.cabeçalho-link a:hover {
+    color: #4d0968;
+    transition: 0.3s all;
+}
+
+/* Estilo do ícone no logo */
+.logo i {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Estilo dos botões */
+button {
+    color: #741c97;
+    background: transparent;
+    border: solid 1px #9623c4;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #9623c4;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Estilo do contêiner de texto */
+.container-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 130px;
+    gap: 50px;
+}
+
+/* Imagem do contêiner de texto */
+.container-text img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+/* Estilo dos textos dentro do contêiner */
+.text h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.text h1 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 48px;
+}
+
+.text span {
+    color: #9623c4;
+}
+
+.text p {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Estilo das redes sociais */
+.redes-social {
+    margin-top: 10px;
+}
+
+.redes-social a {
+    color: #9623c4;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 50px;
+}
+
+/* Estilo do botão principal */
+.btn {
+    color: #741c97;
+    background: transparent;
+    border: solid 1px #9623c4;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: 30px;
+}
+
+/* Estilo responsivo */
+@media screen and (max-width: 600px) {
+    .cabeçalho-link {
+        display: none;
+    }
+    
+    .container-text {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .container-text img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* Seção Sobre Mim */
+.container-text-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-sobre-mim {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-sobre-mim h1 {
+    color: #9623c4;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.text-sobre-mim span {
+    color: #741c97;
+}
+
+.text-sobre-mim p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Seção Formações e Experiências */
+.container-text-formacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    gap: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-formacoes {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-formacoes h1 {
+    color: #9623c4;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.formacao-experiencia p {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.formacao-experiencia strong {
+    color: #9623c4;
+}
+
+/* Seção Cursos */
+.cursos {
+    color: #9623c4;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.cursos strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #9623c4;
+}
+
+.curso-item {
+    background-color: #ffffff;
+    border: 2px solid #9623c4;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.curso-item:hover {
+    background-color: #9623c4;
+    color: #ffffff;
+}
+
+.curso-item i {
+    font-size: 30px;
+    color: #9623c4;
+}
+
+.curso-item p {
+    font-size: 17px;
+    color: #000000;
+    margin: 0;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Botão do formulário de contato */
+.btn-container {
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px 60px;
+}
+
+/* Seção Portfólio */
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-portfolio {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-portfolio h1 {
+    color: #9623c4;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text-portfolio p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Seção Contato */
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.contact-form-container h1 {
+    color: #9623c4;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+.contact-form-container label {
+    display: block;
+    color: #741c97;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9623c4;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form-container button {
+    background-color: #9623c4;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #741c97;
+}
