@@ -412,11 +412,3 @@ button:hover {
 .contact-form-container button:hover {
     background-color: #741c97;
 }
-
-@media screen and (max-width: 600px) {
-    .cabeçalho-link {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-}
